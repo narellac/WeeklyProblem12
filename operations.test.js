@@ -2,10 +2,10 @@ import { TestResult } from "@jest/types";
 import * as operations from "./operations";
 
 //1
-describe('function add positive numbers', () => {
+describe('text test', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('text field', () => {
+  expect(operations.texto()).not.toBeNull();
   });
 
 });
@@ -14,71 +14,71 @@ describe('function add positive numbers', () => {
 //2
 describe('function add positive numbers', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
+  test('sum 5 + 4 is equal to 9', () => {
   expect(operations.suma(5, 4)).toBe(9);
   });
 
 });
 
 //3
-describe('function add positive numbers', () => {
+describe('function that subtracts positive numbers', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('subtrac 10 - 6 is equal to 4', () => {
+  expect(operations.resta(10, 6)).toBe(4);
   });
 
 });
 
 //4
-describe('function add positive numbers', () => {
+describe('function that multiplies positive values', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('multiplying 5 * 6 equals 30', () => {
+  expect(operations.multiplicacion(5, 6)).toBe(30);
   });
 
 });
 
 //5
-describe('function add positive numbers', () => {
+describe('function of dividing positive numbers', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('dividing 50/5 equals 10', () => {
+  expect(operations.division(50, 5)).toBe(10);
   });
 
 });
 
-//6
-describe('function add positive numbers', () => {
+//6 REVEER
+describe('multiplication function', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('multiply by i', () => {
+  expect(operations.tablaMultiplicar(50)).toBe();
   });
 
 });
 
 //7
-describe('function add positive numbers', () => {
+describe('power function with positive values', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('positive exponents', () => {
+  expect(operations.potencia(5, 7)).toBe(78125);
   });
 
 });
 
 //8
-describe('function add positive numbers', () => {
+describe('positive squared numbers functions', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('multiply by x', () => {
+  expect(operations.anidada(4, 5)).toBe(41);
   });
 
 });
 
-//9
-describe('function add positive numbers', () => {
+//9 REVEER
+describe('', () => {
 
-  test('sumar 5 + 4 es igual a 9', () => {
-  expect(operations.suma(5, 4)).toBe(9);
+  test('', () => {
+  expect(operations.tablaMultiplicar(50)).toBe();
   });
 
 });
