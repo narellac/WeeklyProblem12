@@ -1,0 +1,29 @@
+{
+  "name": "weeklyproblem12",
+  "version": "0.0.1",
+  "description": "Problem 12 of QA Assurance course",
+  "main": "operations.js",
+  "scripts": {
+    "test": "jest --color",
+    "test-coverage": "jest --coverage --color"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narellac/WeeklyProblem12.git"
+  },
+  "author": "Narella Calvente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narellac/WeeklyProblem12/issues"
+  },
+  "homepage": "https://github.com/narellac/WeeklyProblem12#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.15",
+    "jest": "^26.6.3"
+  }
+}
