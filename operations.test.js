@@ -42,7 +42,7 @@ describe('function that multiplies positive values', () => {
 describe('function of dividing different numbers', () => {
 
   test('dividing 50/0 equals 0', () => {
-  expect(operations.division(50, 0)).toBe(0);
+  expect(operations.division(50, 0)).toBe('No se puede dividir por 0');
   });
   test('dividing 50/5 equals 10', () => {
   expect(operations.division(50, 5)).toBe(10);
