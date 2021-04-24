@@ -1,17 +1,17 @@
 import { TestResult } from "@jest/types";
 import * as operations from "./operations";
 
-//1
+
 describe('text test', () => {
 
   test('text field', () => {
-  expect(operations.texto()).not.toBeNull();
+  expect(operations.texto('hellow world')).not.toBeNull();
   });
 
 });
 
 
-//2
+
 describe('function add positive numbers', () => {
 
   test('sum 5 + 4 is equal to 9', () => {
@@ -20,7 +20,7 @@ describe('function add positive numbers', () => {
 
 });
 
-//3
+
 describe('function that subtracts positive numbers', () => {
 
   test('subtrac 10 - 6 is equal to 4', () => {
@@ -29,7 +29,7 @@ describe('function that subtracts positive numbers', () => {
 
 });
 
-//4
+
 describe('function that multiplies positive values', () => {
 
   test('multiplying 5 * 6 equals 30', () => {
@@ -38,25 +38,30 @@ describe('function that multiplies positive values', () => {
 
 });
 
-//5
-describe('function of dividing positive numbers', () => {
 
+describe('function of dividing different numbers', () => {
+
+  test('dividing 50/0 equals 0', () => {
+  expect(operations.division(50, 0)).toBe(0);
+  });
   test('dividing 50/5 equals 10', () => {
   expect(operations.division(50, 5)).toBe(10);
   });
 
 });
 
-//6 REVEER
+
 describe('multiplication function', () => {
 
-  test('multiply by i', () => {
-  expect(operations.tablaMultiplicar(50)).toBe();
+  test('tablaMultiplicar undefined', () => {
+  expect(operations.tablaMultiplicar(2, undefined)).toStrictEqual([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
   });
-
+  test('multiplying 2 for 5', () => {
+  expect(operations.tablaMultiplicar(2, 4)).toEqual([0, 2, 4, 6, 8]);
+  });
 });
 
-//7
+
 describe('power function with positive values', () => {
 
   test('positive exponents', () => {
@@ -65,7 +70,7 @@ describe('power function with positive values', () => {
 
 });
 
-//8
+
 describe('positive squared numbers functions', () => {
 
   test('multiply by x', () => {
@@ -74,11 +79,11 @@ describe('positive squared numbers functions', () => {
 
 });
 
-//9 REVEER
+
 describe('', () => {
 
-  test('', () => {
-  expect(operations.tablaMultiplicar(50)).toBe();
+test('adding two left ceros to the left', () => {
+  expect(operations.cerosIzq(15, 4)).toBe("0015");
   });
 
 });

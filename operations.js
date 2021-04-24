@@ -1,28 +1,18 @@
-//1
-
 const texto = (texto) => {
   return texto
 }
-
-//2
 
 const suma = (sumandoA, sumandoB) => {
   return sumandoA + sumandoB;
 }
 
-//3
-
 const resta = (minuendo, sustraendo) => {
   return minuendo - sustraendo;
 }
 
-//4
-
 const multiplicacion = (factorA, factorB) => {
   return factorA * factorB;
 }
-
-//5
 
 const division = (dividendo, divisor) => {
   if  ( divisor === 0)  {
@@ -31,8 +21,6 @@ const division = (dividendo, divisor) => {
     return dividendo / divisor;
   }
 }
-
-//6
 
 const tablaMultiplicar = (multiplicando, multiplicador) => {
   if (multiplicador === undefined) multiplicador = 10;
@@ -43,13 +31,9 @@ const tablaMultiplicar = (multiplicando, multiplicador) => {
   return table
 }
 
-//7
-
 const potencia = (base, exponente) => {
   return Math.pow(base, exponente)
 }
-
-//8
 
 const anidada = (a,b) => {
   function cuadrado(x) {
@@ -57,8 +41,6 @@ const anidada = (a,b) => {
   }
   return cuadrado(a) + cuadrado(b);
 }
-
-//9
 
 const cerosIzq = (num, totalLength) => {
   var numStr = num.toString();
@@ -69,7 +51,6 @@ const cerosIzq = (num, totalLength) => {
   return numStr;
 }
 
-//Export
 
 export {
   texto,
